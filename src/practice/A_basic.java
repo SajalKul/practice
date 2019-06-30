@@ -34,6 +34,7 @@ public class A_basic {
            }
           System.out.println("*");
            }
+        System.out.println("hello world");
       /* for(int k =0;k<n;k++){
            for(int l=0;l<k;l++ ){
                 System.out.print(" ");
