@@ -20,29 +20,24 @@ public class A_basic {
         // TODO code application logic here
         
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the number of lines");
-        int n = 5,i;//in.nextInt();
-        int half = n/2,k;
+        //System.out.println("Enter the number of lines");
+        int n = 15,i;//in.nextInt();
+        int half = n/2;
+        int k;
         for(int j=0;j<n;j++){
            for(i=n;i>j;i--){ 
             System.out.print(" ");    
-            }
-           System.out.print("*");
-           for(k=0;k<=j*2;k++){
-               System.out.print(" ");
-               
            }
-          System.out.println("*");
+           for(k=0;k<=j;k++){
+               if(k==0||k==j||j==half){
+                   System.out.print(" "+'*');
+               }
+               else{
+                   System.out.print(" "+" ");
+               }
+                   
            }
-        System.out.println("hello world");
-      /* for(int k =0;k<n;k++){
-           for(int l=0;l<k;l++ ){
-                System.out.print(" ");
-            }   
-            
-            System.out.println("*");
-         
-          }*/
-             
+          System.out.println();
+        }     
     }
 }
